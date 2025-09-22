@@ -1,0 +1,28 @@
+{
+  // JSON schema for validation and auto-complete support
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  // Name of the Cloudflare Worker project (must be globally unique)
+  "name": "investino-html-renderer",
+
+  "account_id": "1e52e81d7a78c387934ba906438e4535", // voidloop.team
+
+  // Entry point file for the Worker (compiled to JS if using TS)
+  "main": "src/index.ts",
+
+  // API compatibility date (ensure stable behavior with Cloudflare APIs)
+  "compatibility_date": "2025-04-28",
+
+  // Enables `wrangler dev` to run the project locally
+  "workers_dev": true,
+
+  // Enables observability (logs, metrics, etc.) in Cloudflare Dashboard
+  "observability": {
+    "enabled": true
+  },
+  
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+}

@@ -1,0 +1,20 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "1des-landing-page",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-08-03",
+	"observability": {
+		"enabled": true
+	},
+	"assets": {
+		"directory": "./public",
+		"binding": "ASSETS"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "one-des",
+			"database_id": "b6864cfb-cb47-4a3f-a2d0-cc92033126a7"
+		}
+	]
+}
