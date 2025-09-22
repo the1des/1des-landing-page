@@ -19,7 +19,7 @@ export function homepage(): string {
     <!-- Primary SEO -->
     <title>1DES — Intelligent Trading, AI Automation & Real-Time Signals</title>
     <meta name="title" content="1DES — Intelligent Trading, AI Automation & Real-Time Signals" />
-    <meta name="description" content="1DES builds AI-powered trading automation: real-time data pipelines, ML-driven signals, and tools that democratize finance. Explore our products, case studies, and the AI & Trading Academy." />
+    <meta name="description" content="1DES builds AI-powered trading automation with real-time data, ML-driven signals, and tools that democratize finance. Explore our products and academy." />
     <link rel="canonical" href="https://1des.com/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="1DES" />
