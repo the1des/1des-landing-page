@@ -92,7 +92,7 @@ export function homepage(): string {
         "https://twitter.com/the1des",
         "https://github.com/the1des",
         "https://www.youtube.com/@1destradingsolutions497",
-        "https://t.me/The1DES",
+        "https://t.me/The1DES"
       ]
     }
     </script>
@@ -104,7 +104,6 @@ export function homepage(): string {
       "name": "1DES"
     }
     </script>
-
 
     <link rel="alternate" href="https://1des.com/" hreflang="en" />
   </head>
