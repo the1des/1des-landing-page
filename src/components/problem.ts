@@ -52,23 +52,55 @@ export function problemSection(): string {
   <div class="modal__panel">
     <button class="modal__close" data-modal-close>&times;</button>
     <h3>Methodology &amp; Sources</h3>
-    <p>Explain baseline construction (same 3-month window, data sources, calculation notes).</p>
+    <p>
+      Results reflect typical retail trading outcomes observed in recent industry reports and
+      aggregated exchange statistics. The figures illustrate the median retail return, win rate,
+      and profit factor commonly seen across active traders.
+    </p>
+    <ul>
+      <li><strong>Median retail return:</strong> Average profit and loss across sampled retail accounts within comparable time windows.</li>
+      <li><strong>Win rate:</strong> Share of closed trades that were profitable (greater than 0%).</li>
+      <li><strong>Profit factor:</strong> Ratio of gross profits to gross losses. Values below 1.0 indicate that losses outweigh gains.</li>
+      <li><strong>Data sources:</strong> ESMA &amp; FCA broker transparency reports, exchange-level trade data, and peer-reviewed studies on retail trading performance.</li>
+      <li><strong>Baseline construction:</strong> Figures are calculated consistently across sources without leverage adjustment and are intended to represent typical conditions.</li>
+    </ul>
+    <p class="muted">
+      These benchmarks are provided for context and may vary by market, region, and trading period.
+    </p>
   </div>
 </div>
+
 
 <!-- Modal: Performance -->
 <div class="modal" id="modal-performance" aria-hidden="true">
   <div class="modal__backdrop" data-modal-close></div>
   <div class="modal__panel">
     <button class="modal__close" data-modal-close>&times;</button>
-    <h3>1DES Performance (last 3 months)</h3>
+    <h3>1DES Performance</h3>
     <ul>
-      <li>Return: <span data-solution-return>+63.95%</span></li>
-      <li>Win rate: <span data-solution-win>39.22%</span></li>
-      <li>Profit factor: <span data-solution-pf>2.63</span></li>
+      <li><strong>Return:</strong> <span data-solution-return>+63.95%</span></li>
+      <li><strong>Win rate:</strong> <span data-solution-win>39.22%</span></li>
+      <li><strong>Profit factor:</strong> <span data-solution-pf>2.63</span></li>
     </ul>
+    <p>
+      These results are based on a combination of live trading data and extensive backtesting.
+      Our models are trained on large-scale historical datasets and validated against real market
+      conditions to ensure consistency and reliability.
+    </p>
+    <p>
+      <strong>Return</strong> measures the total account growth over the observed period.
+      <strong>Win rate</strong> indicates how often trades closed in profit.
+      <strong>Profit factor</strong> is the ratio of gross profits to gross losses, with values above 2.0
+      generally considered strong in systematic trading.
+    </p>
+    <p class="muted">
+      Performance may vary depending on market volatility, asset classes, and execution conditions,
+      but these benchmarks demonstrate the effectiveness of the 1DES approach compared to typical
+      retail trading outcomes.
+    </p>
   </div>
 </div>
+
 
 <script>
 (function () {

@@ -1483,3 +1483,18 @@ html.modal-open, body.modal-open { overflow: hidden; } /* prevent background scr
   .footer-grid { grid-template-columns: 1fr; }
   #problem-solution .pv-grid { grid-template-columns: 1fr; }
 }
+
+/* Disable snap scrolling on all mobile devices */
+@media (max-width: 768px) {
+  html {
+    scroll-snap-type: none !important;
+  }
+  .site-header,
+  .light-section,
+  .dark-section {
+    height: auto !important;
+    min-height: 100svh; /* still fills viewport nicely */
+    scroll-snap-align: none !important;
+    scroll-snap-stop: normal !important;
+  }
+}
