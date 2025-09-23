@@ -1,5 +1,6 @@
 // src/index.ts
 import { homepage } from './components/homepage';
+import { page404 } from './components/page404';
 
 interface Env {
   DB: D1Database;
@@ -91,7 +92,9 @@ export default {
     }
 
     // === Fallback ===
-    return new Response("Not Found", { status: 404 });
+    return new Response(page404(), {
+      headers: { "Content-Type": "text/html; charset=UTF-8" },
+    });
   },
 } satisfies ExportedHandler<Env>;
 
