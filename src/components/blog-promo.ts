@@ -22,17 +22,23 @@ export function blogPromoSection(): string {
           </div>
 
           <!-- Featured articles -->
-          <div class="featured-articles">
-            <a class="fa-card" href="https://cognitrade.1des.com/posts/10-enhance-algo-trading-win-rate-ml-part-1-labelling-data" target="_blank" rel="noopener">
+          <div class="featured-articles flex flex-row gap-4 overflow-x-auto">
+            <a class="fa-card flex-1 min-w-[300px]" href="https://cognitrade.1des.com/posts/22-lstm-to-patchtst-crypto-forecasting" target="_blank" rel="noopener">
+              <h3>From LSTM to PatchTST: Forecasting Crypto</h3>
+              <p class="muted">Discover how PatchTST and Transformers are reshaping time-series forecasting in crypto markets like BTCUSDT.</p>
+            </a>
+
+            <a class="fa-card flex-1 min-w-[300px]" href="https://cognitrade.1des.com/posts/10-enhance-algo-trading-win-rate-ml-part-1-labelling-data" target="_blank" rel="noopener">
               <h3>How to Improve Algo Trading Win Rate with ML</h3>
               <p class="muted">Practical labelling techniques and backtesting workflows for boosting win rate.</p>
             </a>
 
-            <a class="fa-card" href="https://cognitrade.1des.com/posts/18-feature-store-architecture-real-time-ml-trading-pipelines" target="_blank" rel="noopener">
+            <a class="fa-card flex-1 min-w-[300px]" href="https://cognitrade.1des.com/posts/18-feature-store-architecture-real-time-ml-trading-pipelines" target="_blank" rel="noopener">
               <h3>Feature Store: The Key to MLOps for Trading Bots</h3>
               <p class="muted">How feature stores enable reliable, real-time pipelines for ML-driven trading.</p>
             </a>
           </div>
+
 
           <!-- quick points -->
           <div class="stat-chips mt-md">
