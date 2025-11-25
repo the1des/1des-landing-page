@@ -98,15 +98,6 @@ export function page404(): string {
 
     <link rel="alternate" href="https://1des.com/" hreflang="en" />
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E021YVS2QR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-E021YVS2QR');
-  </script>
   <body>
   <section class="site-header text-center">
   <!-- logo -->
