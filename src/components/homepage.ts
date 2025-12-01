@@ -8,7 +8,7 @@ import { teamSection } from './team';
 import { footerSection } from './footer';
 import { blogPromoSection } from './blog-promo';
 
-export function homepage(): string {
+export function homepage(turnstileSiteKey = ""): string {
   const head = `
   <!DOCTYPE html>
   <html lang="en">
@@ -78,6 +78,8 @@ export function homepage(): string {
 
     <link rel="stylesheet" href="/css/styles.css" />
 
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
     <!-- Structured Data (Organization + Website) -->
     <script type="application/ld+json">
     {
@@ -121,7 +123,7 @@ export function homepage(): string {
     problemSection(),
     democratizeSection(),
     howSection(),
-    featuresSection(),
+    featuresSection(turnstileSiteKey),
     blogPromoSection(),
     teamSection(),
     footerSection(),

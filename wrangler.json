@@ -16,5 +16,8 @@
 			"database_name": "one-des",
 			"database_id": "b6864cfb-cb47-4a3f-a2d0-cc92033126a7"
 		}
-	]
+	],
+	"vars": {
+		"TURNSTILE_SITEKEY": "0x4AAAAAAB1nJGZ69MtayYak"
+	}
 }
