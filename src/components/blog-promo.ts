@@ -23,6 +23,11 @@ export function blogPromoSection(): string {
 
           <!-- Featured articles -->
           <div class="featured-articles flex flex-row gap-4 overflow-x-auto">
+            <a class="fa-card flex-1 min-w-[300px]" href="https://cognitrade.1des.com/posts/23-patchtst-vs-lstm-crypto-forecasting-benchmark" target="_blank" rel="noopener">
+              <h3>PatchTST vs LSTM: A Hands-On Benchmark</h3>
+              <p class="muted">We pit PatchTST against LSTM on multivariate crypto OHLCV data to see which learns faster and forecasts price moves better.</p>
+            </a>
+
             <a class="fa-card flex-1 min-w-[300px]" href="https://cognitrade.1des.com/posts/22-lstm-to-patchtst-crypto-forecasting" target="_blank" rel="noopener">
               <h3>From LSTM to PatchTST: Forecasting Crypto</h3>
               <p class="muted">Discover how PatchTST and Transformers are reshaping time-series forecasting in crypto markets like BTCUSDT.</p>

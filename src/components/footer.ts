@@ -47,6 +47,7 @@ export function footerSection(): string {
           <a href="#how">How it works</a>
           <a href="#problem-solution">1DES Solutions</a>
           <a href="https://cognitrade.1des.com" target="_blank">Cognitrade 1DES Blog</a>
+          <a href="https://funding.1des.com/" target="_blank">Funding Program</a>
         </nav>
 
         <!-- Company -->
