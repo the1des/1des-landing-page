@@ -37,6 +37,14 @@ export default {
     const url = new URL(request.url);
     const ip = request.headers.get("CF-Connecting-IP");
     const rateKey = ip ?? "unknown";
+    const host = url.hostname.toLowerCase();
+    const isLocalHost = host === "localhost" || host === "127.0.0.1";
+    const canonicalHost = "1des.com";
+
+    if (!isLocalHost && host === `www.${canonicalHost}`) {
+      const target = `${url.protocol}//${canonicalHost}${url.pathname}${url.search}`;
+      return Response.redirect(target, 301);
+    }
 
     // === API endpoint to save email ===
     // src/index.ts (only the /api/waitlist branch shown)
@@ -158,7 +166,11 @@ export default {
 
     // === Fallback ===
     return new Response(page404(), {
-      headers: { "Content-Type": "text/html; charset=UTF-8" },
+      status: 404,
+      headers: {
+        "Content-Type": "text/html; charset=UTF-8",
+        "X-Robots-Tag": "noindex",
+      },
     });
   },
 } satisfies ExportedHandler<Env>;
